@@ -23,7 +23,7 @@ var AppComponent = /** @class */ (function () {
         var _this = this;
         this.dataService.helloWorld()
             .subscribe(function (data) { return _this.helloFromController = data; });
-        this.serverDataService.helloWorld()
+        this.serverDataService.helloWorldFromServer()
             .subscribe(function (data) { return _this.helloFromApiController = data; });
     };
     AppComponent = __decorate([

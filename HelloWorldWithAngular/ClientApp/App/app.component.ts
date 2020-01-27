@@ -21,8 +21,7 @@ export class AppComponent implements OnInit {
     loadProducts() {
         this.dataService.helloWorld()
             .subscribe((data: string[]) => this.helloFromController = data);
-        this.serverDataService.helloWorld()
+        this.serverDataService.helloWorldFromServer()
             .subscribe((data: string[]) => this.helloFromApiController = data);
     }
-
 }

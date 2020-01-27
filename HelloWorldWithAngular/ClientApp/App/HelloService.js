@@ -12,9 +12,9 @@ import { HttpClient } from '@angular/common/http';
 var HelloService = /** @class */ (function () {
     function HelloService(http) {
         this.http = http;
-        this.url = "hello";
+        this.url = "https://localhost:44366/hello";
     }
-    HelloService.prototype.helloWorld = function () {
+    HelloService.prototype.helloWorldFromServer = function () {
         return this.http.get(this.url);
     };
     HelloService = __decorate([
