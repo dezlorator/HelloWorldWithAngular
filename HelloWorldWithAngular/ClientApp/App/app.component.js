@@ -9,11 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component } from '@angular/core';
 import { DataService } from './data.service';
-import { HelloService } from './HelloService';
 var AppComponent = /** @class */ (function () {
-    function AppComponent(dataService, serverDataService) {
+    function AppComponent(dataService) {
         this.dataService = dataService;
-        this.serverDataService = serverDataService;
     }
     AppComponent.prototype.ngOnInit = function () {
         this.loadProducts(); // загрузка данных при старте компонента  
@@ -23,16 +21,14 @@ var AppComponent = /** @class */ (function () {
         var _this = this;
         this.dataService.helloWorld()
             .subscribe(function (data) { return _this.helloFromController = data; });
-        this.serverDataService.helloWorldFromServer()
-            .subscribe(function (data) { return _this.helloFromApiController = data; });
     };
     AppComponent = __decorate([
         Component({
             selector: 'app',
             templateUrl: './app.component.html',
-            providers: [DataService, HelloService]
+            providers: [DataService]
         }),
-        __metadata("design:paramtypes", [DataService, HelloService])
+        __metadata("design:paramtypes", [DataService])
     ], AppComponent);
     return AppComponent;
 }());

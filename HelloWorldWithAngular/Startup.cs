@@ -11,8 +11,6 @@ namespace HelloAngularApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(option => option.EnableEndpointRouting = false);
-
-            services.AddMvc();
         }
          
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

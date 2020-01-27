@@ -11,11 +11,6 @@
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
   </PropertyGroup>
   <ItemGroup>
-    <TypeScriptCompile Update="ClientApp\App\HelloService.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-  </ItemGroup>
-  <ItemGroup>
     <TypeScriptCompile Update="ClientApp\polyfills.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
